@@ -97,10 +97,24 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=$PATH:~/pkgs/bin
-alias vim="nvim"
+export PATH=$PATH:~/pkgs/bin:~/.config/nvim/pack/bundle/start/fzf/bin
+alias vim=nvim
+alias vi=nvim
 alias git_s="ssh build@10.200.48.127"
 alias jenk_s="ssh build@10.200.48.125"
+
+# No nested neovims
+if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
+        if [ -x "$(command -v nvr)" ]; then
+                alias nvim=nvr
+                alias vim=nvr
+                alias vi=nvr
+        else
+                alias nvim='echo "no nesting"'
+                alias vim='echo "no nesting"'
+                alias vi='echo "no nesting"'
+        fi
+fi
 
 # Oh my zsh stuff
 autoload -U promptinit; promptinit
