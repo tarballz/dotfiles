@@ -98,6 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$PATH:~/pkgs/bin:~/.config/nvim/pack/bundle/start/fzf/bin
+export PATH=$PATH:/Users/pschwarz/Library/Python/3.7/bin
 alias vim=nvim
 alias vi=nvim
 alias git_s="ssh build@10.200.48.127"

@@ -16,3 +16,7 @@ if has('nvim')
 	tnoremap <M-l> <c-\><c-n><c-w>l
 endif
 
+" Case insensitive search
+set ignorecase
+set smartcase
+
