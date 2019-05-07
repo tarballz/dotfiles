@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/pschwarz/.oh-my-zsh"
+  export ZSH="/home/pschwarz/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -63,11 +63,10 @@ ZSH_THEME=""
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  colored-man-pages
-  brew
-  osx
-  zsh-syntax-highlighting
+	git
+	zsh-syntax-highlighting
+	tmux
+	colored-man-pages
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,12 +96,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=$PATH:~/pkgs/bin:~/.config/nvim/pack/bundle/start/fzf/bin
-export PATH=$PATH:/Users/pschwarz/Library/Python/3.7/bin
+
+export EDITOR=nvim
+export VISUAL=nvim
 alias vim=nvim
-alias vi=nvim
 alias git_s="ssh build@10.200.48.127"
 alias jenk_s="ssh build@10.200.48.125"
+
+# Add nvr to path
+export PATH=~/.local/bin:$VIMCONFIG/pack/bundle/start/fzf/bin:$PATH
+
+export VIMCONFIG=~/.config/nvim
+export VIMDATA=~/.local/share/nvim
+
+export FZF_DEFAULT_COMMAND='rg --files'
 
 # No nested neovims
 if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
@@ -117,7 +124,8 @@ if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
         fi
 fi
 
-# Oh my zsh stuff
+# MUST BE LAST THING IN ZSHRC
+# Setup pure-prompt
 autoload -U promptinit; promptinit
 prompt pure
 
