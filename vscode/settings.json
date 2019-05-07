@@ -1,0 +1,51 @@
+{
+    "workbench.startupEditor": "none",
+    "telemetry.enableTelemetry": false,
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "\"Fira Code\"",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}VSCode",
+    "editor.minimap.enabled": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "editor.dragAndDrop": false,
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "workbench.list.horizontalScrolling": true,
+    "workbench.useExperimentalGridLayout": true,
+    "workbench.statusBar.feedback.visible": false,
+    "window.enableMenuBarMnemonics": false,
+    "window.menuBarVisibility": "toggle",
+    "files.associations": {
+        "*cmake*": "cmake"
+    },
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "u"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo"
+                }
+            ]
+        }
+    ],
+    "workbench.activityBar.visible": false,
+    "breadcrumbs.enabled": true
+}
