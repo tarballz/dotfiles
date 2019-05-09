@@ -1,5 +1,7 @@
 # dotfiles
 
+This is just a fork I made to help a friend get set started using [dotbot](https://github.com/anishathalye/dotbot). These are not my dotfiles.
+
 # Set-up
 #### 1. Clone the repo to your preferred location and enter the root directory
   `git clone https://github.com/OxSon/.dotfiles`
