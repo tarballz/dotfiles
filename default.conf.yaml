@@ -8,9 +8,9 @@
 
 - link:
     ~/.zshrc:
-    ~/.vscode:
-        glob: true
-        path: vscode/*
     ~/.config/:
         glob: true
         path: config/*
+
+- shell:
+    - git submodule update
