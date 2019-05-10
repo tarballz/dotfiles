@@ -1,0 +1,17 @@
+- yay:
+    - zsh
+    - vim-nox
+    - tmux
+    - neovim
+    - tldr
+    - xclip
+    - python
+    - python2
+    - python-pip
+    - python2-pip
+    - code
+    - nodejs
+    - npm
+- shell:
+    - [echo WARNING, The following will fail when not run with sudo or root privileges.]
+    - npm install --global pure-prompt --allow-root --unsafe-perm=true
