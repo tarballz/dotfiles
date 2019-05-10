@@ -1,5 +1,6 @@
 {
     "workbench.startupEditor": "none",
+    "workbench.activityBar.visible": false,
     "telemetry.enableTelemetry": false,
     "files.autoSave": "afterDelay",
     "editor.fontFamily": "\"Fira Code\"",
@@ -21,7 +22,7 @@
     "files.associations": {
         "*cmake*": "cmake"
     },
-    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false,
     "vim.normalModeKeyBindings": [
         {
             "before": [
@@ -46,6 +47,5 @@
             ]
         }
     ],
-    "workbench.activityBar.visible": false,
     "breadcrumbs.enabled": true
 }
