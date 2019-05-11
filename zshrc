@@ -103,6 +103,8 @@ alias vim=nvim
 alias git_s="ssh build@10.200.48.127"
 alias jenk_s="ssh build@10.200.48.125"
 
+alias mumount="fusermount -u ~/Mocana"
+
 # Add nvr to path
 export PATH=~/.local/bin:$VIMCONFIG/pack/bundle/start/fzf/bin:$PATH
 
