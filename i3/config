@@ -28,7 +28,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -304,6 +304,15 @@ exec --no-startup-id ~/.screenlayout/default.sh
 exec_always --no-startup-id xinput --set-prop \
 "SYNA2393:00 06CB:7A13 Touchpad" "libinput Natural Scrolling Enabled"
 
+########################################
+### open apps in workspace at login: ###
+#######################################
+
+# TODO: Set workspaces on specific monitors first before this will work.
+#exec --no-startup-id i3-msg 'workspace $ws1; exec terminal; exec google-chrome-stable'
+#exec --no-startup-id i3-msg 'workspace $ws2; exec code'
+
+
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
@@ -342,7 +351,7 @@ bar {
 	position bottom
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
+	tray_output primary
 #	tray_output eDP1
 
 	bindsym button4 nop

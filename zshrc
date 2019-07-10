@@ -67,6 +67,7 @@ plugins=(
 	zsh-syntax-highlighting
 	tmux
 	colored-man-pages
+    docker
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -99,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=nvim
 export VISUAL=nvim
+export TERM=xterm-256color
+
 alias vim=nvim
 alias git_s="ssh build@10.200.48.127"
 alias jenk_s="ssh build@10.200.48.125"
